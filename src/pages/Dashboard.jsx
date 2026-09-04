@@ -103,11 +103,20 @@ export default function Dashboard() {
         }
       });
 
-      if (!response.ok) {
-        throw new Error(`Server returned status ${response.status}`);
+      if (response.status === 401) {
+        handleLogout();
+        return;
       }
 
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok || data.statusCode === 401 || data.message === 'Invalid or expired token' || (data.success === false && data.statusCode === 401)) {
+        if (response.status === 401 || data.statusCode === 401 || data.message === 'Invalid or expired token') {
+          handleLogout();
+          return;
+        }
+        throw new Error(data.message || `Server returned status ${response.status}`);
+      }
 
       // Parse list from server payload matching data.data.data response structure
       let apiList = [];

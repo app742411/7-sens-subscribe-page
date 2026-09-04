@@ -43,8 +43,11 @@ export default function Login() {
 
       const data = await response.json().catch(() => ({}));
 
-      if (!response.ok) {
-        throw new Error(data.message || data.error || 'Invalid credentials or server error.');
+      if (!response.ok || data.success === false || data.statusCode === 401) {
+        const errorText = data.message || data.error || 'Invalid email or password';
+        setStatus('error');
+        setErrorMsg(errorText);
+        return;
       }
 
       // Save auth token in sessionStorage
@@ -55,16 +58,9 @@ export default function Login() {
       setStatus('idle');
       navigate('/dashboard');
     } catch (err) {
-      console.warn('Login API failed:', err);
-      if (email && password.length >= 4) {
-        sessionStorage.setItem('7sens_admin_token', 'dev_admin_fallback_token');
-        sessionStorage.setItem('7sens_admin_email', email);
-        setStatus('idle');
-        navigate('/dashboard');
-      } else {
-        setStatus('error');
-        setErrorMsg(err.message || 'Failed to sign in. Please check your credentials.');
-      }
+      console.warn('Login API connection error:', err);
+      setStatus('error');
+      setErrorMsg(err.message || 'Failed to sign in. Please check your network connection.');
     }
   };
 
