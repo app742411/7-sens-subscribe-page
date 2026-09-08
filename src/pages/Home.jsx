@@ -21,18 +21,12 @@ export default function Home() {
 
       {/* Main Content Area */}
       <main className="hero-content-left">
-        {/* Category Tag */}
-        <div className="intuition-tag">LET YOUR INTUITION SPEAK</div>
-
         {/* Main Headline */}
         <h1 className="hero-h1-dev">
           {t.heroTitlePrefix}
           <span className="gold-italic">{t.heroTitleItalic}</span>
           {t.heroTitleSuffix}
         </h1>
-
-        {/* Gold Horizontal Accent Line */}
-        <div className="gold-line" />
 
         <p className="hero-p2">
           {t.heroNotice}

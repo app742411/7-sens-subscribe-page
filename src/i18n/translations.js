@@ -11,7 +11,7 @@ export const translations = {
     successTitle: "Merci ! Votre inscription est confirmée.",
     successSubtitle: "Vous ferez partie des tout premiers informés dès l'ouverture de 7Sens.",
     errorInvalidEmail: "Veuillez entrer une adresse e-mail valide.",
-    subscribersNotice: "Accès prioritaire exclusif • Strictement confidentiel",
+    subscribersNotice: "Accès prioritaire aux événements et au lancement de la plateforme",
     subscribersCountMsg: "personnes déjà inscrites sur la liste prioritaire",
     
     // Feature cards
@@ -45,7 +45,7 @@ export const translations = {
     successTitle: "Thank you! Your spot is confirmed.",
     successSubtitle: "You will be among the very first to know when 7Sens opens.",
     errorInvalidEmail: "Please enter a valid email address.",
-    subscribersNotice: "Exclusive priority access • Strictly confidential",
+    subscribersNotice: "Priority access to events and platform launch",
     subscribersCountMsg: "people already on the priority launch list",
     
     // Feature cards
@@ -79,7 +79,7 @@ export const translations = {
     successTitle: "Vielen Dank! Ihre Anmeldung ist bestätigt.",
     successSubtitle: "Sie gehören zu den Ersten, die bei der Eröffnung von 7Sens informiert werden.",
     errorInvalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
-    subscribersNotice: "Exklusiver Prioritätszugang • Streng vertraulich",
+    subscribersNotice: "Prioritätszugang zu Events und zum Plattformstart",
     subscribersCountMsg: "Personen auf der Prioritätsliste",
     
     // Feature cards
