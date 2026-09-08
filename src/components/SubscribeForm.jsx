@@ -54,7 +54,7 @@ export default function SubscribeForm({ lang }) {
         particleCount: 80,
         spread: 70,
         origin: { y: 0.65 },
-        colors: ['#C5A059', '#D4A017', '#0B1B36']
+        colors: ['#C5A059', '#D4A017', '#203A5F']
       });
     } catch (err) {
       console.warn('API submission error:', err);
@@ -65,7 +65,7 @@ export default function SubscribeForm({ lang }) {
         particleCount: 80,
         spread: 70,
         origin: { y: 0.65 },
-        colors: ['#C5A059', '#D4A017', '#0B1B36']
+        colors: ['#C5A059', '#D4A017', '#203A5F']
       });
     }
   };
@@ -125,13 +125,12 @@ export default function SubscribeForm({ lang }) {
         </div>
       )}
 
-      {/* Priority Notice Line & Gold Accent Line */}
+      {/* Priority Notice Line */}
       <div className="notice-badge-container">
         <div className="notice-badge">
           <ShieldCheck size={16} color="#C5A059" className="notice-icon" />
           <span>{t.subscribersNotice}</span>
         </div>
-        <div className="gold-line" />
       </div>
     </div>
   );

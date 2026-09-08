@@ -117,7 +117,7 @@ export default function LegalModal({ type, onClose, lang = 'fr' }) {
                   <Mail size={18} color="#C5A059" />
                   <div>
                     <strong>Email:</strong>
-                    <a href="mailto:s7.sens@gmail.com" style={{ color: '#0B1B36', fontWeight: 600, display: 'block', marginTop: '2px' }}>
+                    <a href="mailto:s7.sens@gmail.com" style={{ color: '#203A5F', fontWeight: 600, display: 'block', marginTop: '2px' }}>
                       s7.sens@gmail.com
                     </a>
                   </div>

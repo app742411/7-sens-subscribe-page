@@ -256,7 +256,7 @@ export default function Dashboard() {
           <div className="metric-card">
             <div className="metric-card-header">
               <span className="metric-label">API Endpoint</span>
-              <Database size={18} color="#0B1B36" />
+              <Database size={18} color="#203A5F" />
             </div>
             <div className="metric-value-sm">/api/admin/contacts/get-all-contact</div>
             <div className="metric-footer">GET status: {loading ? 'Fetching...' : 'Connected (Limit: ' + limit + ')'}</div>
@@ -338,7 +338,7 @@ export default function Dashboard() {
                         </td>
                         <td className="col-date">
                           <div className="date-cell" style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 600, color: '#0B1B36' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 600, color: '#203A5F' }}>
                               <Calendar size={14} color="#C5A059" />
                               <span>{relativeAge}</span>
                             </div>
@@ -375,7 +375,7 @@ export default function Dashboard() {
                   setLimit(newLimit);
                   fetchContacts(1, newLimit);
                 }}
-                style={{ padding: '0.35rem 0.6rem', border: '1px solid #CBD5E1', borderRadius: 0, background: '#ffffff', fontSize: '0.82rem', color: '#0B1B36', outline: 'none' }}
+                style={{ padding: '0.35rem 0.6rem', border: '1px solid #CBD5E1', borderRadius: 0, background: '#ffffff', fontSize: '0.82rem', color: '#203A5F', outline: 'none' }}
               >
                 <option value={10}>10</option>
                 <option value={25}>25</option>
