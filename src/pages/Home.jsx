@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import SubscribeForm from '../components/SubscribeForm';
+import TrustBadges from '../components/TrustBadges';
 import LegalModal from '../components/LegalModal';
+import ShareModal from '../components/ShareModal';
 import { translations } from '../i18n/translations';
 
 export default function Home() {
-  const [lang, setLang] = useState('fr');
-  const [activeModal, setActiveModal] = useState(null); // 'privacy' | 'terms' | 'contact' | null
+  const [lang, setLang] = useState(() => {
+    return (typeof window !== 'undefined' && localStorage.getItem('7sens_lang')) || 'fr';
+  });
+  const [activeModal, setActiveModal] = useState(null); // 'privacy' | 'terms' | 'contact' | 'share' | null
   const t = translations[lang] || translations.fr;
+
+  const handleLangChange = (newLang) => {
+    setLang(newLang);
+    try {
+      localStorage.setItem('7sens_lang', newLang);
+    } catch {
+      // ignore
+    }
+  };
 
   return (
     <div className="app-container-dev">
@@ -17,7 +30,11 @@ export default function Home() {
       </div>
 
       {/* Top Header Navigation Bar */}
-      <Header currentLang={lang} onLangChange={setLang} />
+      <Header 
+        currentLang={lang} 
+        onLangChange={handleLangChange} 
+        onOpenShare={() => setActiveModal('share')}
+      />
 
       {/* Main Content Area */}
       <main className="hero-content-left">
@@ -35,6 +52,9 @@ export default function Home() {
         {/* Integrated Email Form */}
         <SubscribeForm lang={lang} />
       </main>
+
+      {/* 4 Trust & Guarantee Badges */}
+      <TrustBadges lang={lang} />
 
       {/* Footer */}
       <footer className="hero-footer-dev">
@@ -76,9 +96,17 @@ export default function Home() {
 
       {/* Legal & Privacy Policy Modal */}
       <LegalModal 
-        type={activeModal} 
+        type={activeModal !== 'share' ? activeModal : null} 
         onClose={() => setActiveModal(null)} 
         lang={lang} 
+      />
+
+      {/* Standalone / Header Triggered Share Modal */}
+      <ShareModal
+        isOpen={activeModal === 'share'}
+        onClose={() => setActiveModal(null)}
+        lang={lang}
+        eventStatus="pre-registration"
       />
     </div>
   );
