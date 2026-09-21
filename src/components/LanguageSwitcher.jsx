@@ -35,8 +35,8 @@ export default function LanguageSwitcher({ currentLang, onLangChange }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
-    { code: 'en', label: 'EN', Flag: FlagGB },
     { code: 'fr', label: 'FR', Flag: FlagFR },
+    { code: 'en', label: 'EN', Flag: FlagGB },
     { code: 'de', label: 'DE', Flag: FlagDE },
   ];
 

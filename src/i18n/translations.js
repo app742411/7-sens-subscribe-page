@@ -13,6 +13,10 @@ export const translations = {
     errorInvalidEmail: "Veuillez entrer une adresse e-mail valide.",
     subscribersNotice: "Accès prioritaire aux événements et au lancement de la plateforme",
     subscribersCountMsg: "personnes déjà inscrites sur la liste prioritaire",
+    subscribersTargetSuffix: "inscrits pour lancer la plateforme",
+    launchTargetGoal: "Objectif de lancement : 3 000 membres",
+    subscribersRemaining: "plus que {remaining} inscriptions avant le lancement officiel",
+    launchGoalBadge: "Objectif : 3 000",
     
     // Feature cards
     featuresHeader: "L'EXPÉRIENCE 7SENS",
@@ -31,7 +35,40 @@ export const translations = {
 
     // Footer
     swissTagline: "Conçu avec passion en Suisse",
-    copyright: "Tous droits réservés."
+    copyright: "Tous droits réservés.",
+
+    // Share Modal & Actions
+    shareEventBtn: "Partager la page",
+    shareModalBadge: "INVITATION EXCLUSIVE",
+    shareModalTitle: "Partagez cette page avec vos amis pour nous rejoindre",
+    shareModalSubtitle: "",
+    shareEventDetailsTitle: "7Sens — L'expérience de rencontre exclusive",
+    shareEventDate: "Automne 2026",
+    shareEventLocation: "Suisse (Genève • Lausanne • Zurich)",
+    shareStatusPreReg: "Pré-inscriptions ouvertes",
+    shareStatusOpen: "Réservations ouvertes",
+    shareStatusSoldOut: "Complet — Liste d'attente",
+    shareChannelsLabel: "Choisir un moyen de partage :",
+    shareCopyLink: "Copier le lien",
+    shareCopied: "Copié !",
+    shareNative: "Menu de partage mobile",
+    shareCopyInviteText: "Copier le texte d'invitation",
+    shareInviteCopied: "Texte d'invitation copié !",
+    shareDirectUrlLabel: "Lien direct vers la page :",
+    shareEmailSubject: "Invitation : Découvre 7Sens en Suisse",
+    shareEmailBody: "Bonjour,\n\nJe voulais te faire découvrir 7Sens, une nouvelle expérience de rencontres exclusives et authentiques en Suisse.\n\n📅 Date : Automne 2026\n📍 Lieu : Suisse (Genève, Lausanne, Zurich)\n✨ Statut : Pré-inscriptions prioritaires ouvertes\n\nInscris-toi dès maintenant pour nous rejoindre :\n",
+    shareWhatsappText: "Salut ! Rejoins-moi sur 7Sens, une nouvelle expérience de rencontres exclusives en Suisse (Genève, Lausanne, Zurich). Les inscriptions sont ouvertes ici : ",
+    shareInstagramNote: "Texte copié ! Ouvrez Instagram pour le coller dans votre story ou message direct.",
+    shareSuccessBanner: "Votre inscription est validée ! Invitez maintenant vos amis à rejoindre la liste prioritaire.",
+    // Trust Guarantees Bar
+    trust1Title: "100% Gratuit",
+    trust1Subtitle: "Liste d'attente",
+    trust2Title: "Conforme RGPD",
+    trust2Subtitle: "Vos données sont en sécurité",
+    trust3Title: "Créé en Suisse",
+    trust3Subtitle: "Qualité et confiance",
+    trust4Title: "Aucun spam",
+    trust4Subtitle: "Uniquement des informations importantes"
   },
   en: {
     badge: "OPENING SOON",
@@ -47,6 +84,10 @@ export const translations = {
     errorInvalidEmail: "Please enter a valid email address.",
     subscribersNotice: "Priority access to events and platform launch",
     subscribersCountMsg: "people already on the priority launch list",
+    subscribersTargetSuffix: "subscribed to launch this platform",
+    launchTargetGoal: "Platform launch target: 3,000 members",
+    subscribersRemaining: "only {remaining} spots left before platform launch",
+    launchGoalBadge: "Target: 3,000",
     
     // Feature cards
     featuresHeader: "THE 7SENS EXPERIENCE",
@@ -65,7 +106,41 @@ export const translations = {
 
     // Footer
     swissTagline: "Crafted with passion in Switzerland",
-    copyright: "All rights reserved."
+    copyright: "All rights reserved.",
+
+    // Share Modal & Actions
+    shareEventBtn: "Share Page",
+    shareModalBadge: "EXCLUSIVE INVITATION",
+    shareModalTitle: "Share this page with your friends to join",
+    shareModalSubtitle: "",
+    shareEventDetailsTitle: "7Sens — The Exclusive Dating Experience",
+    shareEventDate: "Autumn 2026",
+    shareEventLocation: "Switzerland (Geneva • Lausanne • Zurich)",
+    shareStatusPreReg: "Pre-registration open",
+    shareStatusOpen: "Bookings open",
+    shareStatusSoldOut: "Fully booked — Waiting list",
+    shareChannelsLabel: "Choose how to share:",
+    shareCopyLink: "Copy link",
+    shareCopied: "Copied!",
+    shareNative: "Phone sharing menu",
+    shareCopyInviteText: "Copy full invite message",
+    shareInviteCopied: "Invite message copied!",
+    shareDirectUrlLabel: "Direct link to page:",
+    shareEmailSubject: "Invitation: Discover 7Sens in Switzerland",
+    shareEmailBody: "Hello,\n\nI wanted to invite you to join 7Sens, a new exclusive dating experience in Switzerland.\n\n📅 Date: Autumn 2026\n📍 Location: Switzerland (Geneva, Lausanne, Zurich)\n✨ Status: Priority pre-registration now open\n\nJoin the priority list here:\n",
+    shareWhatsappText: "Hey! Join me on 7Sens, a new exclusive encounter experience in Switzerland (Geneva, Lausanne, Zurich). Reserve your spot here: ",
+    shareInstagramNote: "Text copied! Open Instagram to paste it into your Story or Direct Message.",
+    shareSuccessBanner: "Your spot is secured! Invite your friends to join the priority list now.",
+
+    // Trust Guarantees Bar
+    trust1Title: "100% Free",
+    trust1Subtitle: "Waiting list",
+    trust2Title: "GDPR Compliant",
+    trust2Subtitle: "Your data is secure",
+    trust3Title: "Made in Switzerland",
+    trust3Subtitle: "Quality and trust",
+    trust4Title: "Zero Spam",
+    trust4Subtitle: "Only important updates"
   },
   de: {
     badge: "BALD ERÖFFNUNG",
@@ -81,6 +156,10 @@ export const translations = {
     errorInvalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     subscribersNotice: "Prioritätszugang zu Events und zum Plattformstart",
     subscribersCountMsg: "Personen auf der Prioritätsliste",
+    subscribersTargetSuffix: "registriert für den Plattformstart",
+    launchTargetGoal: "Ziel zum Plattformstart: 3.000 Mitglieder",
+    subscribersRemaining: "nur noch {remaining} Plätze bis zum Start",
+    launchGoalBadge: "Ziel: 3.000",
     
     // Feature cards
     featuresHeader: "DAS 7SENS ERLEBNIS",
@@ -99,7 +178,41 @@ export const translations = {
 
     // Footer
     swissTagline: "Mit Leidenschaft in der Schweiz gestaltet",
-    copyright: "Alle Rechte vorbehalten."
+    copyright: "Alle Rechte vorbehalten.",
+
+    // Share Modal & Actions
+    shareEventBtn: "Seite teilen",
+    shareModalBadge: "EXKLUSIVE EINLADUNG",
+    shareModalTitle: "Teilen Sie diese Seite mit Freunden",
+    shareModalSubtitle: "",
+    shareEventDetailsTitle: "7Sens — Das exklusive Begegnungserlebnis",
+    shareEventDate: "Herbst 2026",
+    shareEventLocation: "Schweiz (Genf • Lausanne • Zürich)",
+    shareStatusPreReg: "Vorregistrierung geöffnet",
+    shareStatusOpen: "Buchungen geöffnet",
+    shareStatusSoldOut: "Ausgebucht — Warteliste",
+    shareChannelsLabel: "Teilen über:",
+    shareCopyLink: "Link kopieren",
+    shareCopied: "Kopiert!",
+    shareNative: "Mobiles Teilen-Menü",
+    shareCopyInviteText: "Einladungstext kopieren",
+    shareInviteCopied: "Einladungstext kopiert!",
+    shareDirectUrlLabel: "Direkter Link zur Seite:",
+    shareEmailSubject: "Einladung: Entdecken Sie 7Sens in der Schweiz",
+    shareEmailBody: "Hallo,\n\nich möchte 7Sens mit Ihnen teilen, ein neues und exklusives Begegnungserlebnis in der Schweiz.\n\n📅 Datum: Herbst 2026\n📍 Ort: Schweiz (Genf, Lausanne, Zürich)\n✨ Status: Prioritäts-Vorregistrierung geöffnet\n\nMelden Sie sich an und seien Sie dabei:\n",
+    shareWhatsappText: "Hallo! Schau dir 7Sens an – ein neues exklusives Begegnungserlebnis in der Schweiz (Genf, Lausanne, Zürich). Melde dich hier an: ",
+    shareInstagramNote: "Text kopiert! Öffnen Sie Instagram, um ihn in Ihre Story oder Direktnachricht einzufügen.",
+    shareSuccessBanner: "Ihre Registrierung ist bestätigt! Laden Sie jetzt Ihre Freunde ein.",
+
+    // Trust Guarantees Bar
+    trust1Title: "100% Kostenlos",
+    trust1Subtitle: "Warteliste",
+    trust2Title: "DSGVO-konform",
+    trust2Subtitle: "Ihre Daten sind sicher",
+    trust3Title: "In der Schweiz kreiert",
+    trust3Subtitle: "Qualität und Vertrauen",
+    trust4Title: "Kein Spam",
+    trust4Subtitle: "Nur wichtige Informationen"
   }
 };
 
